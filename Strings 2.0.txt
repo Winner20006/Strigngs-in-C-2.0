@@ -1,0 +1,22 @@
+#include <stdio.h>
+void hangman(char a[], char letter) {
+  for(int i=0; a[i] != '\0';i++){ 
+  if (a[i] !=letter) 
+    printf("_"); 
+    else 
+    printf("%c",a[i]); 
+  
+  }
+ 
+}
+
+int main()
+{
+   char word[100],letter; 
+  printf("Enter word \n"); 
+  scanf(" %s",word); 
+  printf("Enter a letter\n");
+  scanf(" %c",&letter); 
+  hangman( word,letter);
+    return 0;
+}
